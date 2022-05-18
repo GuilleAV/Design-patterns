@@ -36,6 +36,10 @@ Ya que la operaciones entre usuarios necesitan otras datos.
 Un ejemplo es tener una lista de países que no va a cambiar, y se accedida por muchos usuarios, para no generar una instancia en memoria 
 para cada usuario que quiera ver los países, se genera solo una para todos.
 
+Adjunto diagrama de clases de acuerdo a lo codificado.
+
+![Diagrama de clases Singleton](https://github.com/GuilleAV/Design-patterns/blob/master/assets/Singleton.jpg)
+
 <a name="item2"></a>
 ### Factory
 
