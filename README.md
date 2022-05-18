@@ -47,3 +47,7 @@ En el patrón de fábrica creamos un objeto sin exponer la lógica de creación 
 
 Despues tenemos una clase fabrica que nos va a crear una instancia de la conexión según el parámetro que le pasemos.
 
+![Diagrama de clases Singleton](https://github.com/GuilleAV/Design-patterns/blob/master/assets/Factory.jpg)
+
+Cree una interfaz llamada Coin, y después diferentes clases que las implementen como Euro y Dolar para obtener su cotización con el peso argentino y asi podemos hacer con diferentes monedas.
+
