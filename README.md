@@ -33,7 +33,7 @@ Como ventaja vamos a tener mejor rendimiento en memoria.
 La desventaja es que no podemos usar singleton durante toda la aplicación porque va a ver momentos en donde se requiera alguna instancia nueva . 
 Ya que la operaciones entre usuarios necesitan otras datos.
 
-Un ejemplo es tener una lista de países que no va a cambiar, y se accedida por muchos usuarios, para no generar una instancia en memoria 
+Un ejemplo es tener una lista de países que no va a cambiar, y es accedida por muchos usuarios, para no generar una instancia en memoria 
 para cada usuario que quiera ver los países, se genera solo una para todos.
 
 Adjunto diagrama de clases de acuerdo a lo codificado.
@@ -45,7 +45,7 @@ Adjunto diagrama de clases de acuerdo a lo codificado.
 
 En el patrón de fábrica creamos un objeto sin exponer la lógica de creación al cliente y nos referimos al objeto recién creado usando una interfaz común.
 
-Despues tenemos una clase fabrica que nos va a crear una instancia de la conexión según el parámetro que le pasemos.
+Despues tenemos una clase fabrica que nos va a crear una instancia de la moneda según el parámetro que le pasemos.
 
 ![Diagrama de clases Singleton](https://github.com/GuilleAV/Design-patterns/blob/master/assets/Factory.jpg)
 
