@@ -54,11 +54,11 @@ Despues tenemos una clase fabrica que nos va a crear una instancia de la moneda 
 Cree una interfaz llamada Coin, y después diferentes clases que las implementen como Euro y Dolar para obtener su cotización con el peso argentino y asi podemos hacer con diferentes monedas.
 
 <a name="item3"></a>
-### AbstractFactory
+### Abstract Factory
 
 Este patrón bien llamado fábrica de fabricas o super fábrica. Si necesitamos un objeto tenemos que indicar primero que fábrica va a producir este objeto y luego podemos tener la instancia del objeto que necesitamos.
 
-![Diagrama de clases AbstractFactory](https://github.com/GuilleAV/Design-patterns/blob/master/assets/AbstractFactory.jpg)
+![Diagrama de clases Abstract Factory](https://github.com/GuilleAV/Design-patterns/blob/master/assets/AbstractFactory.jpg)
 
 En la imagen tengo varias monedas con sus cotizaciones que implementan la interface Coin. Tenemos dos fabricas BitCoinFactory y otra CoinFactory ambas extienden de la clase abstracta AbstractFactory y en la clase FactoryProducer hacemos uso de la clase AbstractFactorytra en donde de acuerdo al tipo de fabrica (bitcoin o coin) obtenemos la instancia de fabrica que necesitamos y con ella la instancia de la moneda.  
 
