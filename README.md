@@ -20,6 +20,8 @@ Tenemos la siguiente clasificación :
   2.[Factory](#item2)
   
   3.[AbstractFactory](#item3)
+  
+  4.[Prototype](#item4)
 
 - Patrones Estructurales: Separan la interfaz de la implementación. Se ocupan de cómo las clases y objetos se agrupan, para formar estructuras más grandes.
 
@@ -60,7 +62,19 @@ Este patrón bien llamado fábrica de fábricas o super fábrica. Si necesitamos
 
 ![Diagrama de clases Abstract Factory](https://github.com/GuilleAV/Design-patterns/blob/master/assets/AbstractFactory.jpg)
 
-En la imagen tengo varias monedas con sus cotizaciones que implementan la interface Coin. Tenemos dos fábricas BitCoinFactory y otra CoinFactory ambas extienden de la clase abstracta AbstractFactory y en la clase FactoryProducer hacemos uso de la clase AbstractFactoryt en donde de acuerdo al tipo de fábrica (bitcoin o coin) obtenemos la instancia de fábrica que necesitamos y con ella la instancia de la moneda.  
+En la imagen tengo varias monedas con sus cotizaciones que implementan la interface Coin. Tenemos dos fábricas BitCoinFactory y otra CoinFactory ambas extienden de la clase abstracta AbstractFactory y en la clase FactoryProducer hacemos uso de la clase AbstractFactoryt en donde de acuerdo al tipo de fábrica (bitcoin o coin) obtenemos la instancia de fábrica que necesitamos y con ella la instancia de la moneda.
+
+<a name="item4"></a>
+### Prototype
+
+El objetivo de este patrón es crear una nueva instancia con los valores clonados o copiados de otra instancia.
+
+Es muy útil su implementación en el caso de una costosa operación de base de datos, en donde podemos almacenar en caché el objeto, devolver su clon en la próxima solicitud y actualizar la base de datos cuando sea necesario. Reduciendo así las llamadas a la base de datos.
+
+![Diagrama de clases Prototype](https://github.com/GuilleAV/Design-patterns/blob/master/assets/Prototype.jpg)
+
+
+
 
 
 
